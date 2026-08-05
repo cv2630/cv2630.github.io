@@ -5,28 +5,6 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/x-icon" href="images/pixil-frame-0-2.png">
-<style>
-      .card {
-    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
-    transition: 0.3s;
-    border-radius: 5px;
-  }
-  
-  img {
-    border-radius: 5px 5px 0 0;
-  }
-  .container {
-    padding: 2px 16px;
-  }
-  img {
-    border-radius: 5px 5px 0 0;
-  }
-  .img:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 12px 20px rgba(61, 85, 195, 0.3);
-}
-
-</style>
 <script src=""></script>
 <body>
   <header>
@@ -35,12 +13,12 @@
     <h11><b>Writing</b></h11>
   </header>
   <div class="tabs">
-    <button class="tablink" onclick="openNew('mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
-    <button class="tablink" onclick="openNew('projects.html', this, 'rgb(94, 118, 171)')">Current Projects</button>
-    <button class="tablink" onclick="openNew('resume.html', this, 'rgb(94, 118, 171)')">Resume/CV</button>
+    <button class="tablink" onclick="openNew('mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">Homepage</button>
+    <button class="tablink" onclick="openNew('projects.html', this, 'rgb(94, 118, 171)')">Projects</button>
+    <button class="tablink" onclick="openNew('resume.html', this, 'rgb(94, 118, 171)')">Resume</button>
     <button class="tablink" onclick="openNew('writing.html', this, 'rgb(94, 118, 171)')">Writing</button>
     <button class="tablink" onclick="openNew('contacts.html', this, 'rgb(94, 118, 171)')">Contacts</button>
-    </div> 
+  </div> 
 <br>
 <br>
 <br>
@@ -116,7 +94,6 @@ btn.addEventListener("click", () => {
     document.documentElement.setAttribute("data-theme", "dark");
   }
 });
-
-      </script>
+  </script>
 </body>
 </html>
