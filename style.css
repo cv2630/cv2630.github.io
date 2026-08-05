@@ -8,6 +8,8 @@ img {
     --h1-color: rgb(180, 130, 31);
   --h2-color: rgb(213, 224, 240);
   --h3-color: rgb(213, 224, 240);
+  --a-link-color: rgb(213, 224, 240);
+  --a-visited-color: rgb(160, 170, 200);
   }
 
   [data-theme="dark"] {
@@ -17,6 +19,8 @@ img {
     --h1-color: rgb(180, 130, 31);
     --h2-color: rgb(30, 50, 80);
     --h3-color: rgb(18, 34, 81);
+    --a-link-color: rgb(73, 92, 111);
+    --a-visited-color: rgb(73, 92, 111);
   }
   
   body {
@@ -36,7 +40,7 @@ img {
     text-align: center;
     font-size:large;
     width: 100%;
-    height: 120px;
+    height: 90px;
     font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
     color: rgb(213, 224, 240);
     background: rgb(80, 141, 212);
@@ -55,18 +59,16 @@ img {
   }
 
   a:link {
-    color: rgba(21, 34, 56, 1);
+    color: #2171b5;
     background-color: transparent;
     text-decoration: none;
   }
   
   a:visited {
-    color: rgba(21, 34, 56, 1);
+    color: #2171b5;
     background-color: transparent;
     text-decoration: none;
   }
-  
-
   h11 {
     text-align: center;
     font-size:xx-large;
@@ -126,7 +128,7 @@ img {
   
 
 .card {
-  background-color: #4644b8;
+  background-color: #a99bbe;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(54, 92, 182, 0.2);
   overflow: hidden;
@@ -152,6 +154,7 @@ img {
 .card:hover {
   transform: translateY(-10px);
   box-shadow: 0 12px 20px rgba(61, 85, 195, 0.3);
+  background-color: #7851a9;
 }
 
 .img:hover {
