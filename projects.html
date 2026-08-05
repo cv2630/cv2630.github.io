@@ -9,10 +9,9 @@
       .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
+    border-radius: 5px;
   }
   
-  /* Add rounded corners to the top left and the top right corner of the image */
   img {
     border-radius: 5px 5px 0 0;
   }
@@ -134,23 +133,18 @@ function openCity(cityName, newL, elmnt, color) {
     window.location.href = newL;
     return; 
   }
-  // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
-  // Remove the background color of all tablinks/buttons
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
 
-  // Show the specific tab content
   document.getElementById(cityName).style.display = "block";
-
-  // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
 }
 
@@ -160,13 +154,11 @@ btn.addEventListener("click", () => {
   const theme = document.documentElement.getAttribute("data-theme");
   if (theme === "dark") {
     document.documentElement.removeAttribute("data-theme");
-  } else {
+  } 
+  else {
     document.documentElement.setAttribute("data-theme", "dark");
   }
 });
-
-// Get the element with id="defaultOpen" and click on it
-//document.getElementById("defaultOpen").click();
       </script>
 </body>
 </html>

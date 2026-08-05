@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <meta charset="UTF-8">
-<title>Page Title</title>
+<title>Writing</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" type="image/x-icon" href="images/pixil-frame-0-2.png">
@@ -9,20 +9,12 @@
       .card {
     box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
     transition: 0.3s;
-    border-radius: 5px; /* 5px rounded corners */
+    border-radius: 5px;
   }
   
-  /* Add rounded corners to the top left and the top right corner of the image */
   img {
     border-radius: 5px 5px 0 0;
   }
-  
-  /* On mouse-over, add a deeper shadow */
-  .card:hover {
-    box-shadow: 0 8px 16px 0 rgba(188, 25, 25, 0.2);
-  }
-  
-  /* Add some padding inside the card container */
   .container {
     padding: 2px 16px;
   }
@@ -48,7 +40,7 @@
   <button class="tablink" onclick="openCity('Tokyo', 'mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
   <button class="tablink" onclick="openCity('Tokyo', 'projects.html', this, 'rgb(94, 118, 171)')">Current Projects</button>
   <button class="tablink" onclick="openCity('Tokyo', 'resume.html', this, 'rgb(94, 118, 171)')">Resume/CV</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'links.html', this, 'rgb(94, 118, 171)')">Links of Inspiration</button>
+  <button class="tablink" onclick="openCity('Tokyo', 'writing.html', this, 'rgb(94, 118, 171)')">Writing</button>
   <button class="tablink" onclick="openCity('Tokyo', 'contacts.html', this, 'rgb(94, 118, 171)')">Contacts</button>
 </div>
 <br>
@@ -57,45 +49,15 @@
 <br>
 <center>
   <h11>
-    Links of Inspiration
+    Writing
   </h11>
 </center>
-    <h2>Some readings that have influenced me deeply. IYKYK
+    <h2>Blog:
     </h2>
 
-    <h11>Wikipedia Articles</h11>
-    <p><a href="https://en.wikipedia.org/wiki/Alligator"><h2>Alligator</h2></a>
-    vs.
-    <a href="https://en.wikipedia.org/wiki/Crocodile"><h2>Crocodile</h2></a>
-
-  (they're different!)</p>
-  <img
-      src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Chinese%2Bamerican_alligators.png" style="width: 29vw; min-width: 100px;"
-    />
-    <img
-    src="https://upload.wikimedia.org/wikipedia/commons/5/58/Crocodilia_montage.jpg" style="width: 40vw; min-width: 100px;"
-  />
-  <br>
-  <br>
-  <a href="https://en.wikipedia.org/wiki/Entropy"><h2>What is entropy?</h2></a>
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/2/2e/HS-Wasserdampf_engl.png" style="width: 55vw; min-width: 100px;"
-  />
-  <br>
-  <br>
-
-  <a href="https://en.wikipedia.org/wiki/Vexillology"><h2>Vexillology</h2></a>
-  <img
-    src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/af/Flag_of_South_Africa.svg/2560px-Flag_of_South_Africa.svg.png" style="width: 40vw; min-width: 100px;"
-  />
-  
-  <br>
-  <br>
-  <h11>Chemistry Articles</h11>
-
-  <br>
-  <br>
-  <h11>Assorted Books</h11>
+    <h2>
+      Selected Works:
+    </h2>
 
 
       <pre>⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀⠀
@@ -131,23 +93,18 @@ function openCity(cityName, newL, elmnt, color) {
     window.location.href = newL;
     return; 
   }
-  // Hide all elements with class="tabcontent" by default */
   var i, tabcontent, tablinks;
   tabcontent = document.getElementsByClassName("tabcontent");
   for (i = 0; i < tabcontent.length; i++) {
     tabcontent[i].style.display = "none";
   }
 
-  // Remove the background color of all tablinks/buttons
   tablinks = document.getElementsByClassName("tablink");
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
 
-  // Show the specific tab content
   document.getElementById(cityName).style.display = "block";
-
-  // Add the specific color to the button used to open the tab content
   elmnt.style.backgroundColor = color;
 }
 
@@ -157,7 +114,8 @@ btn.addEventListener("click", () => {
   const theme = document.documentElement.getAttribute("data-theme");
   if (theme === "dark") {
     document.documentElement.removeAttribute("data-theme");
-  } else {
+  } 
+  else {
     document.documentElement.setAttribute("data-theme", "dark");
   }
 });
