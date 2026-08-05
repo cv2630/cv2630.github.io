@@ -31,17 +31,15 @@
   <header>
     <br>
     <button id="themeToggle">🌗</button>
-    <h11><b>Current Projects!</b></h11>
-    <h2>Some current & past projects!</h2>
-    <h3>Chemistry, CS, Math, etc.</h3>
+    <h11><b>Projects</b></h11>
   </header>
   <div class="tabs">
-  <button class="tablink" onclick="openCity('Tokyo', 'mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'projects.html', this, 'rgb(94, 118, 171)')">Current Projects</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'resume.html', this, 'rgb(94, 118, 171)')">Resume/CV</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'contacts.html', this, 'rgb(94, 118, 171)')">Links of Inspiration</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'links.html', this, 'rgb(94, 118, 171)')">Contacts</button>
-</div>
+    <button class="tablink" onclick="open('mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
+    <button class="tablink" onclick="open('projects.html', this, 'rgb(94, 118, 171)')">Current Projects</button>
+    <button class="tablink" onclick="open('resume.html', this, 'rgb(94, 118, 171)')">Resume/CV</button>
+    <button class="tablink" onclick="open('writing.html', this, 'rgb(94, 118, 171)')">Writing</button>
+    <button class="tablink" onclick="open('contacts.html', this, 'rgb(94, 118, 171)')">Contacts</button>
+    </div> 
 <br>
 <br>
 <br>
@@ -128,7 +126,7 @@
 
       <script>
 
-function openCity(cityName, newL, elmnt, color) {
+function open(newL, elmnt, color) {
   if (newL) {
     window.location.href = newL;
     return; 
@@ -143,11 +141,7 @@ function openCity(cityName, newL, elmnt, color) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
-
-  document.getElementById(cityName).style.display = "block";
-  elmnt.style.backgroundColor = color;
 }
-
 const btn = document.getElementById("themeToggle");
 
 btn.addEventListener("click", () => {

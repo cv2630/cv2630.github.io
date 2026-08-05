@@ -10,24 +10,6 @@
 <script src=""></script>
 <body>
 
-  
-<div id="Currents" class="tabcontent">
-    <h2>Current Projects</h2>
-    <p>Some current projects!</p>
-  </div>
-  
-  <div id="Paris" class="tabcontent">
-    <h2>Contacts</h2>
-    <p>Reach out to me!</p>
-  </div>
-  
-  <div id="Tokyo" class="tabcontent">
-    <h2>Tokyo</h2>
-    <p>Tokyo is the capital of Japan.</p>
-  </div>
-  
-  <div id="Oslo" class="tabcontent"> <h2>Oslo</h2> <p>Oslo is the capital of Norway.</p> </div>
-
   <div id="Resume" class="tabcontent">
     <h2>Resume</h2>
     <p>
@@ -40,20 +22,14 @@
   <header>
     <br>
     <button id="themeToggle">🌗</button>
-    <h11><b>Resume</b></h11>
-    <h2>(See below link/page)</h2>
-    <p>
-      <a href="https://drive.google.com/file/d/1ecLBVggs6isl_m4E9bXJxk62dnhObfM3/view?usp=sharing" target="_blank">
-        My Resume/CV
-      </a>
-    </p>
+    <h11><b>Resume/CV</b></h11>
   </header>
   <div class="tabs">
-  <button class="tablink" onclick="openCity('Tokyo', 'mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'projects.html', this, 'rgb(94, 118, 171)')">Current Projects</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'resume.html', this, 'rgb(94, 118, 171)')">Resume/CV</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'writing.html', this, 'rgb(94, 118, 171)')">Writing</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'contacts.html', this, 'rgb(94, 118, 171)')">Contacts</button>
+  <button class="tablink" onclick="open('mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
+  <button class="tablink" onclick="open('projects.html', this, 'rgb(94, 118, 171)')">Current Projects</button>
+  <button class="tablink" onclick="open('resume.html', this, 'rgb(94, 118, 171)')">Resume/CV</button>
+  <button class="tablink" onclick="open('writing.html', this, 'rgb(94, 118, 171)')">Writing</button>
+  <button class="tablink" onclick="open('contacts.html', this, 'rgb(94, 118, 171)')">Contacts</button>
   </div> 
 
   <br>
@@ -101,7 +77,7 @@
 
 
 
-function openCity(cityName, newL, elmnt, color) {
+function open(newL, elmnt, color) {
   if (newL) {
     window.location.href = newL;
     return; 
@@ -116,9 +92,6 @@ function openCity(cityName, newL, elmnt, color) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
-
-  document.getElementById(cityName).style.display = "block";
-  elmnt.style.backgroundColor = color;
 }
 
 const btn = document.getElementById("themeToggle");

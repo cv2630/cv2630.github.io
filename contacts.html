@@ -32,26 +32,19 @@
   <header>
     <br>
     <button id="themeToggle">🌗</button>
-    <h11><b>Contact Me!</b></h11>
-    <h2>Please reach out</h2>
-    <h3>(I am very lonely and love to yap)</h3>
+    <h11><b>Contacts</b></h11>
   </header>
   <div class="tabs">
-  <button class="tablink" onclick="openCity('Tokyo', 'mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'projects.html', this, 'rgb(94, 118, 171)')">Current Projects</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'resume.html', this, 'rgb(94, 118, 171)')">Resume/CV</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'writing.html', this, 'rgb(94, 118, 171)')">Writing</button>
-  <button class="tablink" onclick="openCity('Tokyo', 'contacts.html', this, 'rgb(94, 118, 171)')">Contacts</button>
-</div>
+    <button class="tablink" onclick="open('mainpage.html', this, 'rgb(94, 118, 171)')"id="defaultOpen">About/Homepage</button>
+    <button class="tablink" onclick="open('projects.html', this, 'rgb(94, 118, 171)')">Current Projects</button>
+    <button class="tablink" onclick="open('resume.html', this, 'rgb(94, 118, 171)')">Resume/CV</button>
+    <button class="tablink" onclick="open('writing.html', this, 'rgb(94, 118, 171)')">Writing</button>
+    <button class="tablink" onclick="open('contacts.html', this, 'rgb(94, 118, 171)')">Contacts</button>
+    </div> 
 <br>
 <br>
 <br>
 <br>
-<center>
-  <h11>
-    🚀 Contacts! 🚀
-  </h11>
-</center>
     <h2>Feel free to reach out!
     </h2>
 
@@ -92,7 +85,7 @@
 
 
 
-function openCity(cityName, newL, elmnt, color) {
+function open(newL, elmnt, color) {
   if (newL) {
     window.location.href = newL;
     return; 
@@ -107,9 +100,6 @@ function openCity(cityName, newL, elmnt, color) {
   for (i = 0; i < tablinks.length; i++) {
     tablinks[i].style.backgroundColor = "";
   }
-
-  document.getElementById(cityName).style.display = "block";
-  elmnt.style.backgroundColor = color;
 }
 
 const btn = document.getElementById("themeToggle");
