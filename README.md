@@ -1,14 +1,14 @@
 # Vincent Chen's (@cv2630) Personal Website!
 
-New personal website! Do please reach out to me via email!! chen.vincent.ny@gmail.com
+Hello! Welcome to my new personal website.
 
-(i don't bite i swear)
+For any questions, please reach out at chen.vincent.ny@gmail.com; thanks!
 
 ## More Features TBD:
-- adding/fixing project links / make project cards interactive
-- fix homepage, add more fun facts
-- add interactive components (save my attention span)
-- revising resume (hopefully there's more soon, LOL)
+- make project cards interactive
+- add interactive components
+- revising resume
+- fixing aesthetics
 - and hopefully more on the way!
 
 ```
